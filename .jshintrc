@@ -1,0 +1,33 @@
+{
+  "curly": true,
+  "indent": 2,
+  "undef": true,
+  "strict": true,
+  "trailing": true,
+  "maxlen": 75,
+  "unused": true,
+  "camelcase": true,
+  "globals": {
+    "_": true,
+    "jQuery": true,
+    "angular": true,
+    "console": true,
+    "window": true,
+    "document": true,
+    "screenfull": true,
+    "Modernizr": true,
+    "it": true,
+    "xit": true,
+    "beforeEach": true,
+    "describe": true,
+    "xdescribe": true,
+    "inject": true,
+    "module": true,
+    "expect": true,
+    "jasmine": true,
+    "require": true,
+    "define": true,
+    "head": true,
+    "-W101": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "smartIndent": true,
+  "spaceUnits": 2,
+  "useTabChar": false,
+  "jwolfe.file-tree-exclude.list": [
+    ".git",
+    "node_modules"
+  ],
+  "hdy.brackets-shell.dark": true,
+  "hdy.brackets-shell.trackProject": true,
+  "hdy.brackets-shell.shell": "/bin/bash",
+  "interactive-linter.html": ["htmlhint"],
+  "interactive-linter.javascript": ["jslint"],
+  "language": {
+    "javascript": {
+      "linting.prefer": ["jslint"],
+      "linting.usePreferredOnly": true
+    }
+  }
+}
