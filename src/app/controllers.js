@@ -4,7 +4,7 @@
     HomeController, LoginController, AboutController, ProfileController,
     FriendsController, RegisterController;
   HomeController     = function HomeControllerF() {
-    
+
   };
   LoginController    = function LoginControllerF() {};
   AboutController    = function AboutControllerF() {};
