@@ -3,35 +3,35 @@
   "main": "app.js",
   "license": "MIT",
   "version": "0.0.1",
-  "moduleType": [
-    "amd"
-  ],
-  "authors": [
-    "yahyaKacem <fuj.tyoli@gmail.com>"
-  ],
-  "name": "authentication_with_satellizer-plunk-P5KPum",
-  "description": "authentication example with stellizer AngularJS and uiRouter",
+  "moduleType": ["amd"],
+  "authors": ["yahyaKacem <fuj.tyoli@gmail.com>"],
+  "name": "uiRouter_to_angularNewRouter_migration",
+  "description": "uiRouter to angular new router migration",
   "keywords": [
-    "authentication",
-    "satellizer",
     "uiRouter",
-    "AngularJS"
+    "AngularJS",
+    "satellizer",
+    "authentication",
+    "angularNewRouter"
   ],
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "src/libs",
     "test",
-    "tests"
+    "tests",
+    "**/.*",
+    "src/libs",
+    "node_modules",
+    "bower_components"
   ],
   "dependencies": {
     "jquery": "*",
     "lodash": "*",
     "bootstrap": "*",
+    "bootstrap": "*",
     "satellizer": "*",
+    "bootstrap-sass": "*",
     "angular": "1.4.0-rc.0",
     "Font-Awesome": "~4.3.0",
+    "angular-ui-router": "*",
     "angular-new-router": "~0.5.3",
     "angular-animate": "1.4.0-rc.0",
     "angular-cookies": "1.4.0-rc.0",

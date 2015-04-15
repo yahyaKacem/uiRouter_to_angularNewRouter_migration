@@ -3,17 +3,16 @@
   "license": "MIT",
   "version": "0.0.1",
   "author": "yahyaKacem <fuj.tyoli@gmail.com>",
-  "name": "authentication_with_satellizer-plunk-P5KPum",
-  "description": "authentication with AngularJS uiRouter stellizer",
-  "scripts": "none",
+  "name": "uiRouter_to_angularNewRouter_migration",
+  "description": "uiRouter to angular new router migration",
   "keywords": [
-    "authentication",
-    "satellizer",
+    "uiRouter",
     "AngularJS",
-    "uiRouter"
+    "satellizer",
+    "authentication",
+    "AngularNewRouter"
   ],
   "devDependencies": {
-    "browserify": "*",
     "envify": "*",
     "globule": "*",
     "gulp": "*",
