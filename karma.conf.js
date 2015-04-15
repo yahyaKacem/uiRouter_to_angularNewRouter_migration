@@ -4,21 +4,21 @@
     var configDefinitionObject = {
       exclude:       [],
       basePath:      "",
+      preprocessors: {},
       port:          9876,
       colors:        true,
       autoWatch:     true,
       singleRun:     false,
       browsers:      ["Chrome"],
+      frameworks:    ["jasmine"],
       reporters:     ["progress"],
       browserify:    {debug: true},
       logLevel:      config.LOG_INFO,
-      frameworks:    ["jasmine", "browserify"],
-      preprocessors: {"src/app/**/*.js": ["browserify"]},
       files:         [
-        "build/assets/js/vendor.js",
+        "build/js/vendor.js",
         "src/libs/angular-mocks/angular-mocks.js",
-        "build/assets/js/app.js",
-        "src/app/**/*.spec.js"
+        "src/app/**/*.js",
+        "src/tests/**/*.spec.js"
       ]
     };
     config.set(configDefinitionObject);

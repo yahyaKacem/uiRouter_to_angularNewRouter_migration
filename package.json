@@ -45,7 +45,6 @@
     "jasmine-core": "*",
     "jshint-stylish": "*",
     "karma": "*",
-    "karma-browserify": "*",
     "karma-chrome-launcher": "*",
     "karma-jasmine": "*",
     "lodash": "*",

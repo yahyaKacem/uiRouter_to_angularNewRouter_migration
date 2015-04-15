@@ -9,24 +9,19 @@
     files        = paths.getFiles();
     directories  = paths.getDirectories();
     taskRunners  = {
-      ftp:           require('./gulp_tasks/ftp.js'),
-      copy:          require('./gulp_tasks/copy.js'),
-      jade:          require('./gulp_tasks/jade.js'),
-      less:          require('./gulp_tasks/less.js'),
-      karma:         require('./gulp_tasks/karma.js'),
-      watch:         require('./gulp_tasks/watch.js'),
-      concat:        require('./gulp_tasks/concat.js'),
-      ngdocs:        require('./gulp_tasks/ngdocs.js'),
-      htmlmin:       require('./gulp_tasks/htmlmin.js'),
-      handleJS:      require('./gulp_tasks/handle_js.js'),
-      methodsHelper: require('./gulp_tasks/print_all_methods_helper.js')
+      ftp:      require('./gulp_tasks/ftp.js'),
+      copy:     require('./gulp_tasks/copy.js'),
+      sass:     require('./gulp_tasks/sass.js'),
+      karma:    require('./gulp_tasks/karma.js'),
+      watch:    require('./gulp_tasks/watch.js'),
+      concat:   require('./gulp_tasks/concat.js'),
+      ngdocs:   require('./gulp_tasks/ngdocs.js'),
+      htmlmin:  require('./gulp_tasks/htmlmin.js'),
+      handleJS: require('./gulp_tasks/handle_js.js')
     };
-    distTasks    = require('./tasks/dist_tasks.js').getTasks(gulp, plugins, directories, files, taskRunners);
-    frameTasks   = require('./tasks/frame_tasks.js').getTasks(gulp, plugins, directories, files, taskRunners);
     otherTasks   = require('./tasks/other_tasks.js').getTasks(gulp, plugins, directories, files, taskRunners);
     buildTasks   = require('./tasks/build_tasks.js').getTasks(gulp, plugins, directories, files, taskRunners);
-    backEndTasks = require('./tasks/back_end_tasks.js').getTasks(gulp, plugins, directories, files, taskRunners);
-    return otherTasks.concat(distTasks, buildTasks, backEndTasks, frameTasks);
+    return otherTasks.concat(buildTasks);
   };
   module.exports.getTasks = getTasks;
 }(module, require));
