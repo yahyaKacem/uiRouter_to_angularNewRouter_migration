@@ -1,4 +1,5 @@
-(function (ng, exports) {
+/*jslint maxlen: 110*/
+(function (ng) {
   "use strict";
   var config, routes, uiView;
   uiView         = "<ui-view/>";
@@ -10,35 +11,30 @@
       data:     {access: "*"}
     },
     {
-      templateUrl: '404',
-      url:         '/404',
-      name:        'public.404'
-    },
-    {
-      templateUrl:  'login',
-      controllerAs: 'Login',
-      url:          '/login',
-      name:         'public.login',
-      controller:   'LoginController',
-    },
-    {
-      templateUrl:  'register',
-      controllerAs: 'Register',
-      url:          '/register',
-      name:         'public.register',
-      controller:   'RegisterController',
-    },
-    {
       abstract: true,
       template: uiView,
       name:     'private',
       data:     {access: 'private'}
     },
     {
+      templateUrl:  'login',
+      controllerAs: 'Login',
+      url:          '/login',
+      name:         'public.login',
+      controller:   'LoginController'
+    },
+    {
+      templateUrl:  'register',
+      controllerAs: 'Register',
+      url:          '/register',
+      name:         'public.register',
+      controller:   'RegisterController'
+    },
+    {
       url:          '/',
       controllerAs: 'Home',
-      name:         'user.home',
       templateUrl:  'home.html',
+      name:         'private.home',
       controller:   'HomeController'
     },
     {
@@ -46,21 +42,21 @@
       url:          '/profile',
       templateUrl:  'profile.html',
       name:         'private.profile',
-      controller:   "ProfileController",
+      controller:   "ProfileController"
     },
     {
       controllerAs: "Profile",
       url:          '/:username',
       name:         'private.user',
       templateUrl:  'profile.html',
-      controller:   "ProfileController",
+      controller:   "ProfileController"
     },
     {
       controllerAs: 'Friends',
       url:          '^/friends',
       templateUrl:  'friends.html',
       controller:   'FriendsController',
-      name:         "private.profile.friends",
+      name:         "private.profile.friends"
     },
     {
       controllerAs: "About",
@@ -74,7 +70,7 @@
       url:          '/friends',
       templateUrl:  'friends.html',
       controller:   'FriendsController',
-      name:         "private.user.friends",
+      name:         "private.user.friends"
     },
     {
       controllerAs: "About",
@@ -98,6 +94,6 @@
     '$locationProvider',
     '$urlRouterProvider'
   ];
-  ng.module("app", ['ngCookies', 'ui.router']).config(config);
-  exports.routes = routes;
-}(angular, (typeof exports === 'undefined') ? this.routes = {} : exports));
+  ng.module("app", ['ngSanitize', 'ngMessages', 'ngNewRouter', 'satellizer'])
+    .config(config);
+}(angular));
