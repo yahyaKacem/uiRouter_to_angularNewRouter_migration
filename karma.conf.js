@@ -15,10 +15,18 @@
       browserify:    {debug: true},
       logLevel:      config.LOG_INFO,
       files:         [
-        "build/js/vendor.js",
-        "src/libs/angular-mocks/angular-mocks.js",
-        "src/app/**/*.js",
-        "src/tests/**/*.spec.js"
+        "libs/jquery/dist/jquery.js",
+        "libs/angular/angular.js",
+        "libs/angular-cookies/angular-cookies.js",
+        "libs/angular-sanitize/angular-sanitize.js",
+        "libs/angular-animate/angular-animate.js",
+        "libs/angular-new-router/dist/router.es5.js",
+        "libs/angular-ui-router/release/angular-ui-router.js",
+        "libs/angular-ui-router-styles/ui-router-styles.js",
+        "libs/satellizer/satellizer.js",
+        "libs/angular-mocks/angular-mocks.js",
+        "js/**/*.js",
+        "tests/**/*.spec.js"
       ]
     };
     config.set(configDefinitionObject);
